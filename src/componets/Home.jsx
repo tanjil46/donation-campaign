@@ -1,12 +1,15 @@
-import { Outlet } from "react-router-dom";
+import Banner from "./Banner";
+import GetDonation from "./GetDonation";
+
 
 
 const Home = () => {
     return (
         <div>
-            this is home
+           <Banner></Banner>
+           <GetDonation></GetDonation>
 
-<Outlet></Outlet>       
+     
  </div>
     );
 };

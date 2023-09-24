@@ -4,11 +4,11 @@
       "Picture": "https://i.ibb.co/JjSJr0Y/Clothing.png",
       "Title": "Cloth For Everyone",
       "Category": "Clothing",
-      "Category_bg": "#4CAF50",
+      "Category_bg": "#008000",
       "Card_bg": "#E8F5E9",
-      "Text_bg": "#333",
+      "Text_bg": "#008000",
       "Description": "Support our mission to protect and preserve the world's rainforests. Your donation will go towards reforestation efforts and wildlife conservation.",
-      "Price": "$50"
+      "Price": 50
     },
     {
       "id": 2,
@@ -17,31 +17,31 @@
       "Category": "Education",
       "Category_bg": "#2196F3",
       "Card_bg": "#E3F2FD",
-      "Text_bg": "#333",
+      "Text_bg": "#FF0000",
       "Description": "Give the gift of education to children in need. Your donation will provide school supplies, books, and access to quality education.",
-      "Price": "$25"
+      "Price": 25
     },
     {
       "id": 3,
       "Picture": "https://i.ibb.co/23Rm8GW/Food.png",
       "Title": "Feed the Hungry",
       "Category": "Food",
-      "Category_bg": "#FF9800",
+      "Category_bg": " #FFA500",
       "Card_bg": "#FFF3E0",
-      "Text_bg": "#333",
+      "Text_bg": " #FFA500",
       "Description": "Join us in the fight against hunger. Your contribution will help provide nutritious meals to those who are struggling to put food on the table.",
-      "Price": "$10"
+      "Price": 10
     },
     {
       "id": 4,
       "Picture": "https://i.ibb.co/Ms3G1GG/Health.png",
       "Title": "Support Medical Research",
       "Category": "Health",
-      "Category_bg": "#E91E63",
+      "Category_bg": "#0000FF",
       "Card_bg": "#F8BBD0",
-      "Text_bg": "#333",
+      "Text_bg": "#0000FF",
       "Description": "Help advance medical science and find cures for diseases. Your donation will fund cutting-edge research and clinical trials.",
-      "Price": "$100"
+      "Price": 100
     },
     {
       "id": 5,
@@ -50,86 +50,86 @@
       "Category": "Education",
       "Category_bg": "#9C27B0",
       "Card_bg": "#E1BEE7",
-      "Text_bg": "#333",
+      "Text_bg": "#FF0000",
       "Description": "Give the homeless a safe place to stay. Your support will provide shelter, warm meals, and access to essential services.",
-      "Price": "$35"
+      "Price": 35
     },
     {
       "id": 6,
       "Picture": "https://i.ibb.co/23Rm8GW/Food.png",
       "Title": "Clean Water for All",
       "Category": "Food",
-      "Category_bg": "#03A9F4",
+      "Category_bg": " #FFA500",
       "Card_bg": "#BBDEFB",
-      "Text_bg": "#333",
+      "Text_bg": " #FFA500",
       "Description": "Ensure access to clean and safe drinking water. Your donation will fund water purification projects in underserved communities.",
-      "Price": "$15"
+      "Price": 15
     },
     {
       "id": 7,
       "Picture": "https://i.ibb.co/41hv97Q/Education.png",
       "Title": "Animal Welfare Education",
       "Category": "Education",
-      "Category_bg": "#8BC34A",
+      "Category_bg": "#FF0000",
       "Card_bg": "#DCEDC8",
-      "Text_bg": "#333",
+      "Text_bg": "#FF0000",
       "Description": "Support the well-being of animals in need. Your contribution will go towards animal shelters, veterinary care, and rescue efforts.",
-      "Price": "$20"
+      "Price": 20
     },
     {
       "id": 8,
       "Picture": "https://i.ibb.co/23Rm8GW/Food.png",
       "Title": "Food for life",
       "Category": "Food",
-      "Category_bg": "#FF5722",
+      "Category_bg": " #FFA500",
       "Card_bg": "#FFCCBC",
-      "Text_bg": "#333",
+      "Text_bg": " #FFA500",
       "Description": "Promote gender equality and women's empowerment. Your donation will support education, healthcare, and economic opportunities for women and girls.",
-      "Price": "$30"
+      "Price": 30
     },
     {
       "id": 9,
       "Picture": "https://i.ibb.co/JjSJr0Y/Clothing.png",
       "Title": "Clean Energy Initiative",
       "Category": "Clothing",
-      "Category_bg": "#4CAF50",
+      "Category_bg": "#008000",
       "Card_bg": "#E8F5E9",
-      "Text_bg": "#333",
+      "Text_bg": "#008000",
       "Description": "Transition to clean and renewable energy sources. Your contribution will help combat climate change and reduce carbon emissions.",
-      "Price": "$50"
+      "Price": 50
     },
     {
       "id": 10,
       "Picture": "https://i.ibb.co/Ms3G1GG/Health.png",
       "Title": "Disaster Relief Fund",
       "Category": "Health",
-      "Category_bg": "#F44336",
+      "Category_bg": "#0000FF",
       "Card_bg": "#FFCDD2",
-      "Text_bg": "#333",
+      "Text_bg": "#0000FF",
       "Description": "Provide immediate assistance to disaster-stricken communities. Your donation will help rebuild homes and provide relief to those in crisis.",
-      "Price": "$50"
+      "Price": 50
     },
     {
       "id": 11,
       "Picture": "https://i.ibb.co/JjSJr0Y/Clothing.png",
       "Title": "Arts and Culture Preservation",
       "Category": "Clothing",
-      "Category_bg": "#9C27B0",
+      "Category_bg": "#008000",
       "Card_bg": "#E1BEE7",
-      "Text_bg": "#333",
+      "Text_bg": "#008000",
       "Description": "Support the preservation of artistic and cultural heritage. Your donation will fund museums, galleries, and cultural preservation projects.",
-      "Price": "$25"
+      "Price": 25
     },
     {
       "id": 12,
       "Picture": "https://i.ibb.co/Ms3G1GG/Health.png",
       "Title": "Mental Health Awareness",
       "Category": "Health",
-      "Category_bg": "#E91E63",
+      "Category_bg": "#0000FF",
       "Card_bg": "#F8BBD0",
-      "Text_bg": "#333",
+      "Text_bg": "#0000FF",
       "Description": "Break the stigma surrounding mental health. Your contribution will support mental health awareness campaigns and access to mental healthcare.",
-      "Price": "$20"
+      "Price": 20
     }
   ]
   
