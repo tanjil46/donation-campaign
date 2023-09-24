@@ -11,6 +11,7 @@ import Root from './componets/Root';
 import Home from './componets/Home';
 import ErrorHandler from './componets/ErrorHandler';
 import Donatedetails from './componets/Donatedetails';
+import DonationsAfterDonated from './componets/DonationsAfterDonated';
 
 const router=createBrowserRouter([
 
@@ -28,6 +29,10 @@ const router=createBrowserRouter([
   path:'/detail/:id',
   element:<Donatedetails></Donatedetails>,
   loader:()=> fetch('donation.json')
+ },
+ {
+  path:'donate',
+  element:<DonationsAfterDonated></DonationsAfterDonated>
  }
 
 
