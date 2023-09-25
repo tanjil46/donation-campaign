@@ -75,7 +75,7 @@ const Donatedetails = () => {
                     <img className=" w-full mx-auto h-auto" src={Picture}></img>
 
              <div className="w-full h-[18%] absolute text-center bottom-0  opacity-50   flex  pl-4  items-center bg-black">
-             <button onClick={donateHandler} style={donateBtnColor} className='btn text-xl font-bold text-white'>Donate<BiDollar/><span>{Price}</span></button>
+             <button onClick={donateHandler} style={donateBtnColor} className='btn lg:text-xl md:text-lg text-sm font-bold text-white'>Donate<BiDollar/><span>{Price}</span></button>
              <ToastContainer/>
            </div>
  </div>
