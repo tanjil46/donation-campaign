@@ -1,6 +1,29 @@
-# Add at least 3 Project features.  
-- set donation to localStorage and get them for donation details how much amout they donated
-- make Rechart for total donation percentage and how much people donated
-- people can search donation categoris by their category name
+
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
