@@ -1,6 +1,9 @@
 
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import BannerSearch from "./BannerSearch";
+
+
 
 
 
@@ -8,35 +11,42 @@ import { Link } from "react-router-dom";
 const Banner = () => {
 
     const [searchItems,setSerachItems]=useState([])
-    const[searchValue,setSerachValue]=useState('')
-   
-
-const searchHandler=()=>{
+    const{Value}=useParams()
+    const[submitValue,setSubmitValue]=useState('')
 
 
 
-
-
-
-
- fetch('donation.json')
- .then(res=>res.json())
- .then(data=>setSerachItems(data))
  
+    useEffect(()=>{
+
+
+        fetch('donation.json')
+        .then(res=>res.json())
+        .then(data=>setSerachItems(data))
+    
+    
+    
+    },[Value])
+
+
+
+    const mathingId = searchItems.filter(items=>items.Category.includes(submitValue))
 
 
 
 
-}
-console.log(searchValue)
 
 
 
+const searchHandler=(e)=>{
+    e.preventDefault();
 
 
 
-
-    return (
+    
+  
+  }
+ return (
         <div>
             
 
@@ -46,16 +56,24 @@ console.log(searchValue)
 <p className="lg:text-6xl md:text-3xl text-xl text-center font-bold">I Grow By Helping People In Need</p>
       
      <div  className="text-center">
-     <input onChange={(e)=>setSerachValue(e.target.value)} value={searchValue} className="py-2 px-5 outline-none border-b  border-blue-500" type="text"  placeholder="Search Here"></input>
-     <button onClick={searchHandler} className="btn btn-error">Search</button>
+        <form onSubmit={searchHandler}>
+     <input onChange={(e)=>setSubmitValue(e.target.value)} value={submitValue}  className="py-2 px-5 outline-none border-b  border-blue-500" type="text"  placeholder="Search Here"></input>
+     <button type="submit"  className="btn btn-error">Search</button>
+     </form>
+         
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 mt-7 px-6">
 
-          {
+
+
+
+            {
+
+            mathingId.map(match=><BannerSearch match={match} key={match.id}></BannerSearch>)
+
 
           
-         searchItems.map(item=><Link key={item.id} to={`item/${item.id}`}></Link>)
-
-          }
-
+           }
+          </div>
 
 
 

@@ -12,8 +12,8 @@ import Home from './componets/Home';
 import ErrorHandler from './componets/ErrorHandler';
 import Donatedetails from './componets/Donatedetails';
 import DonationsAfterDonated from './componets/DonationsAfterDonated';
-import Percentagedonate from './componets/Percentagedonate';
-import BannerSearch from './componets/BannerSearch';
+
+
 import GetDonatePercentage from './GetDonatePercentage';
 
 const router=createBrowserRouter([
@@ -49,11 +49,6 @@ const router=createBrowserRouter([
   
 
 
- 
- {
-  path:'/item/:itemId',
-  element:<BannerSearch></BannerSearch>
- }
 
 
 
