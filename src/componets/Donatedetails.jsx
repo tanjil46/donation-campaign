@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import { BiDollar } from "react-icons/bi"
 
 const Donatedetails = () => {
  
@@ -15,8 +16,12 @@ const Donatedetails = () => {
 
     const{Picture,Price,Description,Title,Text_bg}=deTailIs
 
-    const donateHandler=()=>{
+    const donateBtnColor={
+      backgroundColor:Text_bg
+    }
 
+    const donateHandler=()=>{
+     
      const doNations=[];
 
 
@@ -37,6 +42,7 @@ const Donatedetails = () => {
         
         doNations.push(...donationStrorage,deTailIs)
         localStorage.setItem('donate',JSON.stringify(doNations))
+        toast.success('Successfully Donated')
       }
         else{
 
@@ -53,67 +59,25 @@ const Donatedetails = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-       
-
-
-
-
-
-
-
-
-
-
-
-    }
+ }
 
 
 
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return (
         
             
          
 <div className="">
-                 <div className="relative mt-10 mb-10">
+                 <div className="relative mt-10 mb-10 mx-auto w-[80%] ">
 
 
-                    <img className=" w-[60%] mx-auto" src={Picture}></img>
+                    <img className=" w-full mx-auto h-auto" src={Picture}></img>
 
-             <p className="w-[60%] absolute opacity-50 h-[18%] ml-18 -mt-24 text-center bg-green-400">
-             <button onClick={donateHandler} className={`btn bg-${Text_bg}`}>Donate<span>{Price}</span></button>
+             <div className="w-full h-[18%] absolute text-center bottom-0  opacity-50   flex  justify-center  items-center bg-black">
+             <button onClick={donateHandler} style={donateBtnColor} className='btn text-xl font-bold text-white'>Donate<BiDollar/><span>{Price}</span></button>
              <ToastContainer/>
-           </p>
+           </div>
  </div>
 
 
@@ -123,7 +87,7 @@ const Donatedetails = () => {
                     <p className="text-xl font-bold">{Title}</p>
                     <p>{Description}</p>
                 </div>
-
+           
 
 
 

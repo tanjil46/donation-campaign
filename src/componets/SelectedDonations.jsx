@@ -1,11 +1,30 @@
 import PropTypes from 'prop-types';
-
+import { BiDollar } from "react-icons/bi"
 const SelectedDonations = ({donateData}) => {
-          const{Picture,Title,Category,Card_bg,Text_bg,Price}=donateData
+          const{Picture,Title,Category,Category_bg,Text_bg,Price,Card_bg}=donateData
+
+
+
+          const cardBackColor={
+            backgroundColor:Card_bg
+          }
+
+          const textStyle = {
+            color: Text_bg
+           
+        };
+      
+      const buttonBackcolor={
+        backgroundColor:Text_bg
 
 
 
 
+      };
+        
+  const Categorystyle={
+    color:Category_bg
+  };
 
 
 
@@ -14,19 +33,22 @@ const SelectedDonations = ({donateData}) => {
 
 
     return (
-        <div>
+        <div className=''>
             
-            <div className="hero  bg-base-200">
-  <div className="hero-content flex-col lg:flex-row">
-    <img src={Picture} className="" />
-    <div>
-      <h1 className="">{Category}</h1>
-      <p className='text-xl font-bold'>{Title}</p>
-      <h2 className=''>{Price}</h2>
-    
-      <button className="btn ">View Details</button>
+            
+  <div style={cardBackColor} className=" lg:flex mx-6  gap-2 my-5">
+    <div className="">
+    <img src={Picture} className="lg:w-[250px] w-full" />
     </div>
-  </div>
+        <div className="">
+      <h1 style={Categorystyle} className="font-bold ">{Category}</h1>
+      <p style={textStyle} className='text-xl font-bold'>{Title}</p>
+      <div style={Categorystyle} className="flex items-center">
+     <BiDollar  className='text-xl'></BiDollar>
+       <h2 className='text-xl font-bold'><span>{Price}</span></h2>
+       </div>
+      <button style={buttonBackcolor} className="btn text-white font-bold">View Details</button>
+      </div>
 </div>
 
 

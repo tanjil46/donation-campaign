@@ -6,6 +6,8 @@ import SelectedDonations from "./SelectedDonations";
 
 const DonationsAfterDonated = () => {
 const [localData,setLocalData]=useState([])
+const[dataLength,setDataLength]=useState(4)
+const[dataError,setDataerror]=useState(false)
 
 
   useEffect(()=>{
@@ -14,7 +16,17 @@ const [localData,setLocalData]=useState([])
 
     const donationStrorage=JSON.parse(localStorage.getItem('donate'))
 
-            setLocalData(donationStrorage)
+
+
+              if(donationStrorage){
+                setLocalData(donationStrorage)
+              }else{
+                  setDataerror("No data found")
+
+              }
+
+
+          
           
           
        
@@ -27,7 +39,7 @@ const [localData,setLocalData]=useState([])
 
   },[])
 
-
+  
 
 
 
@@ -36,22 +48,37 @@ const [localData,setLocalData]=useState([])
 
 
 
-console.log(localData)
+
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+      <div className="">
+
+      {dataError? <p className="text-3xl h-screen flex items-center justify-center">{dataError}</p>: 
+
+     
+
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3  ">
             
     {
      
-       localData.slice(0,4).map(donateData=><SelectedDonations donateData={donateData} key={donateData.id}></SelectedDonations>)
-
-
+       localData.slice(0,dataLength).map(donateData=><SelectedDonations donateData={donateData} key={donateData.id}></SelectedDonations>)
     }
+
+
         
 
+     <div className={dataLength===localData.length &&'hidden'}>
+ <div className="text-center">
+       <button onClick={()=>setDataLength(localData.length)} className="btn btn-primary ">Show All</button>
+       </div>
+
+     </div>
 
 
-
+</div>
+       
+}
 
         </div>
     );
