@@ -72,7 +72,7 @@ const Percentagedonate = ({totalDonate,lenGth}) => {
             cx={200}
             cy={200}
             labelLine={false}
-            outerRadius={80}
+            outerRadius={150}
             fill="#8884d8"
             dataKey="value"
           >
