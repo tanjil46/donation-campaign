@@ -5,14 +5,14 @@ const Header = () => {
     return (
         <div>
             
-        <div className="navbar bg-base-100">
-<div className="lg:flex-1">
+        <div className="navbar items-center grid justify-center bg-base-100 md:flex lg:flex md:justify-between lg:justify-around  ">
+<div className="">
  <img src="./Resources/Logo.png"></img>
- 
+ </div>
 
 
-</div>
-<div className=":flex-none ">
+
+<div className=" ">
 <ul className="menu menu-horizontal px-1 ">
   <li><NavLink to='/'  className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-green-400 underline" : ""
@@ -29,10 +29,10 @@ isPending ? "pending" : isActive ? "text-green-400 underline" : ""
   
  
 </ul>
-</div>
-</div>
 
 
+</div>
+</div>
              
 
 

@@ -34,7 +34,7 @@ const BannerSearch = ({match}) => {
         <div>
        
 
-       <div>
+       <div className="my-7">
            <Link to={`/detail/${id}`}><div style={cardBackColor} className="card my-4">
   <figure><img src={Picture}alt="Food/Healt" /></figure>
   <div className="card-body">
