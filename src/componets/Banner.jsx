@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+
 import BannerSearch from "./BannerSearch";
 
 
@@ -11,7 +11,7 @@ import BannerSearch from "./BannerSearch";
 const Banner = () => {
 
     const [searchItems,setSerachItems]=useState([])
-    const{Value}=useParams()
+   
     const[submitValue,setSubmitValue]=useState('')
 
 
@@ -26,7 +26,7 @@ const Banner = () => {
     
     
     
-    },[Value])
+    },[])
 
 
 
@@ -84,19 +84,7 @@ const searchHandler=(e)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
+ </div>
     );
 };
 
