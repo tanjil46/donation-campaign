@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import PercentageShow from "./PercentageShow";
+import PercentageShow from "../assets/PercentageShow";
 
 
 

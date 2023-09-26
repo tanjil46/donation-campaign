@@ -13,7 +13,7 @@ const Header = () => {
 
 
 <div className=" ">
-<ul className="menu menu-horizontal px-1 ">
+<ul className="menu menu-horizontal px-1 text-lg">
   <li><NavLink to='/'  className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-green-400 underline" : ""
 }>Home</NavLink></li>

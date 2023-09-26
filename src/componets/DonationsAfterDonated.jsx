@@ -53,10 +53,10 @@ const[dataError,setDataerror]=useState(false)
     return (
       <div className="">
 
-      {dataError? <p className="text-3xl h-screen flex items-center justify-center">{dataError}</p>: 
+      {dataError? <p className="text-3xl h-screen flex items-center justify-center">{dataError}</p>:
 
      
-
+       <div className="">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3  ">
             
@@ -66,7 +66,12 @@ const[dataError,setDataerror]=useState(false)
     }
 
 
-        
+   </div>
+
+
+
+
+
 
      <div className={dataLength===localData.length &&'hidden'}>
  <div className="text-center">
@@ -75,12 +80,14 @@ const[dataError,setDataerror]=useState(false)
 
      </div>
 
-
-</div>
-       
+     </div>
+     
+  
 }
 
         </div>
+
+
     );
 };
 

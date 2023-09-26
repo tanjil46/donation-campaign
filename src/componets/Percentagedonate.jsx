@@ -50,7 +50,7 @@ const Percentagedonate = ({totalDonate,lenGth}) => {
      
     ];
     
-    const COLORS = ['#0088FE', '#00C49F'];
+    const COLORS = ['#4CAF50', '#F44336'];
     
   
 
@@ -65,7 +65,7 @@ const Percentagedonate = ({totalDonate,lenGth}) => {
 
 
 
-      <div className='h-screen flex justify-center items-center'>
+      <div className='h-screen grid justify-center items-center lg:flex lg:justify-center lg:items-center'>
         <PieChart width={400} height={400}>
           <Pie
             data={data}
@@ -88,7 +88,7 @@ const Percentagedonate = ({totalDonate,lenGth}) => {
             <div key={`label-${index}`} style={{ display: 'inline-block', margin: '10px' }}>
               <div
                 style={{
-                  width: '20px',
+                  width: '100px',
                   height: '20px',
                   backgroundColor: COLORS[index % COLORS.length],
                   display: 'inline-block',

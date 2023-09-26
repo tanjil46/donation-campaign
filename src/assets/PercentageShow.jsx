@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import Percentagedonate from "./componets/Percentagedonate";
+import Percentagedonate from "../componets/Percentagedonate";
 
 
 const PercentageShow = ({donatePrice,lenGth}) => {

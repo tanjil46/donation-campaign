@@ -12,9 +12,10 @@ import Home from './componets/Home';
 import ErrorHandler from './componets/ErrorHandler';
 import Donatedetails from './componets/Donatedetails';
 import DonationsAfterDonated from './componets/DonationsAfterDonated';
+import GetDonatePercentage from './componets/GetDonatePercentage';
 
 
-import GetDonatePercentage from './GetDonatePercentage';
+
 
 const router=createBrowserRouter([
 

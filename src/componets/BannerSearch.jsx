@@ -68,7 +68,7 @@ const BannerSearch = ({match}) => {
 
   BannerSearch.propTypes ={
 
-    match:PropTypes.array
+    match:PropTypes.object
    
    
     }
